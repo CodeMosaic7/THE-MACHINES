@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #b3b3b3;
+  
+}
+
+.cta-button {
+  background-color: #d32f2f;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff4c4c;
+}
+
+.header {
+  background-color: #1c1c1c;
+  color: #FFFFFF;
+}
+
+.card {
+  background-color: #1c1c1c;
+  border: 1px solid #333333;
+  color: #b3b3b3;
+}
+
+/* BG of landing page*/
+.landing-page {
+  background-image: url('https://i.pinimg.com/564x/c0/15/e1/c015e142f748a21cb386f30effa0c8a8.jpg'); /* Adjust the path as needed */
+  background-size: cover;
+  background-position: center;
+}
+/* Transitions of landing page text */
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50px); /* Start from below */
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    transform: translateX(0); /* End at original position */
+    opacity: 1; /* End visible */
+  }
+}
+
+.slide-in {
+  animation: slideIn 1.2s ease forwards; /* Apply the animation */
+}
