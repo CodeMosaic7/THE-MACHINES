@@ -85,3 +85,24 @@ body {
   top: 50%;
   /* transform: translateY(-50%); */
 }
+
+.transition-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out; /* Add smooth transitions */
+}
+
+.slide-out {
+  transform: translateX(-100%); /* Slide the image out to the left */
+  opacity: 0; /* Fade out as well */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
